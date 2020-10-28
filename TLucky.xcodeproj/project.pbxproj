@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		57916A11254943AF00256CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916A10254943AF00256CEC /* AppDelegate.swift */; };
 		57916A13254943AF00256CEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916A12254943AF00256CEC /* SceneDelegate.swift */; };
-		57916A15254943AF00256CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916A14254943AF00256CEC /* ViewController.swift */; };
+		57916A15254943AF00256CEC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57916A14254943AF00256CEC /* MapViewController.swift */; };
 		57916A18254943AF00256CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57916A16254943AF00256CEC /* Main.storyboard */; };
 		57916A1A254943AF00256CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57916A19254943AF00256CEC /* Assets.xcassets */; };
 		57916A1D254943AF00256CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57916A1B254943AF00256CEC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		57916A0D254943AF00256CEC /* TLucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57916A10254943AF00256CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57916A12254943AF00256CEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57916A14254943AF00256CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57916A14254943AF00256CEC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		57916A17254943AF00256CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57916A19254943AF00256CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57916A1C254943AF00256CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,23 @@
 		57916A0F254943AF00256CEC /* TLucky */ = {
 			isa = PBXGroup;
 			children = (
+				57916A252549506400256CEC /* ViewControllers */,
 				57916A10254943AF00256CEC /* AppDelegate.swift */,
 				57916A12254943AF00256CEC /* SceneDelegate.swift */,
-				57916A14254943AF00256CEC /* ViewController.swift */,
 				57916A16254943AF00256CEC /* Main.storyboard */,
 				57916A19254943AF00256CEC /* Assets.xcassets */,
 				57916A1B254943AF00256CEC /* LaunchScreen.storyboard */,
 				57916A1E254943AF00256CEC /* Info.plist */,
 			);
 			path = TLucky;
+			sourceTree = "<group>";
+		};
+		57916A252549506400256CEC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				57916A14254943AF00256CEC /* MapViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57916A15254943AF00256CEC /* ViewController.swift in Sources */,
+				57916A15254943AF00256CEC /* MapViewController.swift in Sources */,
 				57916A11254943AF00256CEC /* AppDelegate.swift in Sources */,
 				57916A13254943AF00256CEC /* SceneDelegate.swift in Sources */,
 			);

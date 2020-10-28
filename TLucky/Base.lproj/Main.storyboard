@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TLucky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="TLucky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,23 +19,67 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1W9-pr-SKe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LY7-sJ-U3W">
+                                <rect key="frame" x="0.0" y="59" width="414" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VQ-mi-Ftq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7VQ-mi-Ftq" firstAttribute="top" secondItem="LY7-sJ-U3W" secondAttribute="top" id="ENT-7f-1fV"/>
+                                    <constraint firstAttribute="bottom" secondItem="7VQ-mi-Ftq" secondAttribute="bottom" id="JLB-Do-1E9"/>
+                                    <constraint firstItem="7VQ-mi-Ftq" firstAttribute="width" secondItem="LY7-sJ-U3W" secondAttribute="width" id="L0J-di-LFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="7VQ-mi-Ftq" secondAttribute="trailing" id="M0W-Rg-G79"/>
+                                    <constraint firstItem="7VQ-mi-Ftq" firstAttribute="leading" secondItem="LY7-sJ-U3W" secondAttribute="leading" id="XLU-jb-I3T"/>
+                                    <constraint firstItem="7VQ-mi-Ftq" firstAttribute="height" secondItem="LY7-sJ-U3W" secondAttribute="height" id="pXS-kO-12H"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZP-fp-V83">
+                                <rect key="frame" x="354" y="133" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lFM-ch-NWR"/>
+                                    <constraint firstAttribute="width" constant="40" id="z3g-gV-HzI"/>
+                                </constraints>
+                                <state key="normal" image="scope" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="touchUpCurrentLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scb-j4-zDj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SZP-fp-V83" secondAttribute="trailing" constant="20" id="7Xs-8a-WGI"/>
+                            <constraint firstItem="LY7-sJ-U3W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Ua-Ia-wX3"/>
+                            <constraint firstItem="SZP-fp-V83" firstAttribute="top" secondItem="LY7-sJ-U3W" secondAttribute="bottom" constant="20" id="I9t-Tu-p6d"/>
+                            <constraint firstItem="LY7-sJ-U3W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="K5g-Y9-zXq"/>
+                            <constraint firstItem="LY7-sJ-U3W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Khb-d9-sWb"/>
                             <constraint firstItem="1W9-pr-SKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NGY-6F-H8g"/>
                             <constraint firstItem="1W9-pr-SKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U4z-Zp-lCI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1W9-pr-SKe" secondAttribute="trailing" id="VEp-MU-brR"/>
+                            <constraint firstItem="7VQ-mi-Ftq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="iVT-gu-yvO"/>
                             <constraint firstAttribute="bottom" secondItem="1W9-pr-SKe" secondAttribute="bottom" id="tYl-S9-hFL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="1W9-pr-SKe" id="23H-hl-aHw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="114"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>
+        <image name="scope" catalog="system" width="128" height="122"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
