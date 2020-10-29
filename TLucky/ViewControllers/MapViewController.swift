@@ -21,7 +21,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         mapView.showsUserLocation = true
         
         print("test")
-        print("test test")
+        print("test test test")
 
     }
     

@@ -24,7 +24,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VQ-mi-Ftq">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
-                                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -53,6 +53,20 @@
                                     <action selector="touchUpCurrentLocationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scb-j4-zDj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahq-HE-dSo">
+                                <rect key="frame" x="20" y="133" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="LLy-vz-EXa"/>
+                                    <constraint firstAttribute="height" constant="40" id="f1T-7v-ttL"/>
+                                </constraints>
+                                <state key="normal" image="text.justify" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,7 +80,9 @@
                             <constraint firstItem="1W9-pr-SKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U4z-Zp-lCI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1W9-pr-SKe" secondAttribute="trailing" id="VEp-MU-brR"/>
                             <constraint firstItem="7VQ-mi-Ftq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="iVT-gu-yvO"/>
+                            <constraint firstItem="Ahq-HE-dSo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jUW-fS-f4Z"/>
                             <constraint firstAttribute="bottom" secondItem="1W9-pr-SKe" secondAttribute="bottom" id="tYl-S9-hFL"/>
+                            <constraint firstItem="Ahq-HE-dSo" firstAttribute="top" secondItem="SZP-fp-V83" secondAttribute="top" id="zBk-AD-iXJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -80,6 +96,7 @@
     </scenes>
     <resources>
         <image name="scope" catalog="system" width="128" height="122"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
