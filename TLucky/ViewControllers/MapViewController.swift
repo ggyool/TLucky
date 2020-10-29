@@ -20,6 +20,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         mapView.showsUserLocation = true
         
+        print("test")
 
     }
     
@@ -37,10 +38,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     @IBAction func touchUpCurrentLocationButton(_ sender: UIButton) {
         setMapViewCurrentLocation()
     }
-    
 }
-
-
 
 // delegate
 extension MapViewController {
