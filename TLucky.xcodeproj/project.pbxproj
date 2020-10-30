@@ -13,6 +13,8 @@
 		57916A18254943AF00256CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57916A16254943AF00256CEC /* Main.storyboard */; };
 		57916A1A254943AF00256CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57916A19254943AF00256CEC /* Assets.xcassets */; };
 		57916A1D254943AF00256CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57916A1B254943AF00256CEC /* LaunchScreen.storyboard */; };
+		EA706877254BF15B00D30D59 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA706876254BF15B00D30D59 /* MenuViewController.swift */; };
+		EA70687B254BF75D00D30D59 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70687A254BF75D00D30D59 /* SlideInTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		57916A19254943AF00256CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57916A1C254943AF00256CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57916A1E254943AF00256CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA706876254BF15B00D30D59 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EA70687A254BF75D00D30D59 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				57916A19254943AF00256CEC /* Assets.xcassets */,
 				57916A1B254943AF00256CEC /* LaunchScreen.storyboard */,
 				57916A1E254943AF00256CEC /* Info.plist */,
+				EA70687A254BF75D00D30D59 /* SlideInTransition.swift */,
 			);
 			path = TLucky;
 			sourceTree = "<group>";
@@ -70,6 +75,7 @@
 		57916A252549506400256CEC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EA706876254BF15B00D30D59 /* MenuViewController.swift */,
 				57916A14254943AF00256CEC /* MapViewController.swift */,
 			);
 			path = ViewControllers;
@@ -148,6 +154,8 @@
 				57916A15254943AF00256CEC /* MapViewController.swift in Sources */,
 				57916A11254943AF00256CEC /* AppDelegate.swift in Sources */,
 				57916A13254943AF00256CEC /* SceneDelegate.swift in Sources */,
+				EA706877254BF15B00D30D59 /* MenuViewController.swift in Sources */,
+				EA70687B254BF75D00D30D59 /* SlideInTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
