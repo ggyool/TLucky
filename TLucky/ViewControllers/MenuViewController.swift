@@ -17,9 +17,7 @@ class MenuViewController: UITableViewController {
     
     var didTapMenuType: ((MenuType) -> Void)?
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
